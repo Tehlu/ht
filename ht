@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+# check if an argument is provided
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 <filename>"
+    exit 1
+fi
+
+# Get the filename from the command-line argument
+filename=$1
+
+# Check if the file exists
+if [ ! -f "$filename" ]; then
+    echo "File '$filename' not found."
+    exit 1
+fi
+
+
+# Display the last 10 lines of the file
+
+echo
+echo "head"
+head "$filename"
+echo 
+echo "tail"
+tail "$filename"
+
