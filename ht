@@ -17,7 +17,7 @@ if [ ! -f "$filename" ]; then
 fi
 
 
-# Display the last 10 lines of the file
+# Display the first and last 10 lines of the file
 
 echo
 echo "head"
