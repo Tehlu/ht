@@ -20,9 +20,9 @@ fi
 # Display the first and last 10 lines of the file
 
 echo
-echo "---- HEAD -----"
+echo "----- HEAD ------"
 head "$filename"
 echo 
-echo "----- TAIL -----"
+echo "------ TAIL ------"
 tail "$filename"
 
